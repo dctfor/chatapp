@@ -1,5 +1,8 @@
-# Node modules
+# Node.js (Backend y Frontend)
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Logs
 logs/
@@ -8,44 +11,65 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment variables
+# Redis dump
+dump.rdb
+appendonly.aof
+
+# Build de React
+/build
+
+# Directorios de cache
+.cache/
+.cache-loader/
+.pnp/
+.pnp.js
+
+# Archivos de configuración del entorno
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Coverage directory
-coverage/
-
-# Build output
-dist/
-build/
-
-# Optional npm cache directory
-.npm/
-
-# Optional REPL history
-.node_repl_history
-
-# Debug and error reports
-*.pid
-*.seed
-
-# OS-specific files
+# Archivos de configuración de sistema operativo y editor
 .DS_Store
 Thumbs.db
-
-# IDEs and editors
-.vscode/
 .idea/
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*.bak
 
-# npm package lock
+# Archivos de cobertura de pruebas
+coverage/
+*.lcov
+
+# Archivos de paquetes lock
 package-lock.json
 yarn.lock
 
-# Temporary files
+# Archivos temporales de construcción
+dist/
 tmp/
 temp/
 
-# Production
-.env.production
+# Archivos generados por servicios de despliegue
+*.pem
+*.key
+*.crt
 
-# Ignore test coverage reports
-.nyc_output/
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Archivos de configuración de servicios
+*.log
+*~
+
+# Otros archivos y carpetas generados
+.eslintcache
+.cache-loader/
